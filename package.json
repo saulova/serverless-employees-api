@@ -1,0 +1,18 @@
+{
+  "name": "serverless-employees-api",
+  "version": "1.0.0",
+  "description": "Simple serverless employees list API",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Saulo (https://github.com/saulova)",
+  "license": "MIT",
+  "devDependencies": {
+    "@shelf/jest-dynamodb": "^2.2.3",
+    "aws-sdk": "^2.1062.0",
+    "eslint": "^8.7.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.4.7"
+  }
+}

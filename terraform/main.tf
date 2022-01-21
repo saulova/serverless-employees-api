@@ -10,10 +10,8 @@ terraform {
 }
 
 provider "aws" {
-  region     = "us-east-1"
-  access_key = ""
-  secret_key = ""
-
+  region  = var.aws_region
+  profile = var.aws_profile
 
   default_tags {
     tags = {
@@ -21,7 +19,7 @@ provider "aws" {
       CreatedAt = "2022-01-21"
       ManagedBy = "Terraform"
       Owner     = "Saulo"
-      Env       = "dev"
+      Env       = var.env_type
     }
   }
 }
