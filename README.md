@@ -62,7 +62,53 @@ Check the plan and
 terraform apply -auto-approve
 ```
 
-</li><li>
+</li></ol>
+
+## Routes
+
+### GET
+
+```
+All:
+https://<your-api-url>/v1/employees
+
+Find specific:
+https://<your-api-url>/v1/employees/<employeeId>
+```
+
+### POST (Create)
+
+```
+https://<your-api-url>/v1/employees
+
+Request body (replace <values>):
+{
+  "employeeId": <employeeId-as-number>,
+  "age": <age-as-number>,
+  "name": "<name-as-string>"
+  "occupation": "<occupation-as-string>"
+}
+```
+
+### PUT (Update)
+
+```
+https://<your-api-url>/v1/employees
+
+Request body (replace <values>):
+{
+  "employeeId": <id-as-number>,
+  "<field-to-update>": <new-value>,
+}
+```
+
+### DELETE
+
+```
+https://<your-api-url>/v1/employees/<employeeId>
+```
+
+## Destroy
 
 To destroy (remove all services from aws), run:
 
@@ -70,8 +116,7 @@ To destroy (remove all services from aws), run:
 terraform destroy -auto-approve
 ```
 
-</li></ol>
-
 ## Reference
 
 - https://github.com/chgasparoto/youtube-cleber-gasparoto
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs

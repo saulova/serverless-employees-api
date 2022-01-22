@@ -17,7 +17,7 @@ resource "aws_dynamodb_table_item" "this" {
 {
   "employeeId": {"N": "1"},
   "age": {"N": "20"},
-  "name": {"N": "Fulano de Tal"},
+  "name": {"S": "Fulano de Tal"},
   "occupation": {"S": "Desenvolvedor"}
 }
 ITEM
